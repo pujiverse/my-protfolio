@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Pujith Sakhamuri — Portfolio
 
-# Run and deploy your AI Studio app
+Live: https://pujith-sakhamuri-portfolio.vercel.app/
 
-This contains everything you need to run your app locally.
+Plain HTML, CSS and JavaScript. No build step, no npm, no API keys.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1K0u2Bxi7vvJq6TivR5Ov24RGoxrfQJhH
+## How to edit
 
-## Run Locally
+| What you want to change | File |
+|---|---|
+| Any text: name, about, jobs, projects, skills, education, contact | `data.js` |
+| Colors, fonts, spacing | `style.css` (colors are at the top) |
+| Your photo | replace `media/profile.jpg` (keep the same name) |
+| Page layout / section order | `index.html` |
 
-**Prerequisites:**  Node.js
+You can edit right on GitHub: open `data.js` → click the pencil ✏️ → change the text → **Commit changes**. Vercel redeploys automatically in about a minute.
 
+### Add a project
+In `data.js`, copy one project block, paste it under the others, and edit:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```js
+{
+  name: "My New Project",
+  text: "One or two sentences about it.",
+  tags: ["Python", "BigQuery"],
+  link: "https://live-site-url",
+  code: "https://github.com/pujiverse/repo-name"
+},
+```
+
+### Preview on your computer
+Just double-click `index.html` to open it in your browser.

@@ -28,7 +28,7 @@ const PORTFOLIO = {
   /* ---------- CONTACT & LINKS ---------- */
   contact: {
     email: "pujithchowdarys@gmail.com",
-    phone: "(216) 340-4854",            // delete the number (leave "") to hide it
+    phone: "(216) 307-5432",            // delete the number (leave "") to hide it
     linkedin: "https://www.linkedin.com/in/pujith-sakhamuri-06b69a137/",
     github: "https://github.com/pujiverse",
     website: "https://www.pujiverse.com/",

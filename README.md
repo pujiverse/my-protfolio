@@ -21,12 +21,21 @@ In `data.js`, copy one project block, paste it under the others, and edit:
 
 ```js
 {
+  category: "Web app & tool",
   name: "My New Project",
   text: "One or two sentences about it.",
   tags: ["Python", "BigQuery"],
+  status: "Live",
   link: "https://live-site-url",
   code: "https://github.com/pujiverse/repo-name"
 },
+```
+
+### Add a playlist
+In `channels.js`, find the channel and add a new line inside its `playlists: [ ... ]` list:
+
+```js
+      "My New Playlist Name",
 ```
 
 ### Preview on your computer

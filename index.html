@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pujith Chowdary Sakhamuri — Portfolio</title>
-  <meta name="description" content="Portfolio of Pujith Chowdary Sakhamuri — IT Infrastructure & Application Support Engineer, Network Data Analyst and Data Engineer.">
+  <meta name="description" content="Portfolio of Pujith Chowdary Sakhamuri — Full Stack Data & AI Engineer, Network Data Analyst and creator of the Pujiverse Network.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -23,6 +23,7 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#youtube">YouTube</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -42,6 +43,11 @@
       </div>
     </section>
 
+    <!-- Numbers (counted automatically from data.js and channels.js) -->
+    <section class="wrap">
+      <div id="stats" class="stats"></div>
+    </section>
+
     <section id="about" class="wrap section">
       <h2>About</h2>
       <div id="about-text" class="about"></div>
@@ -53,8 +59,16 @@
     </section>
 
     <section id="projects" class="wrap section">
-      <h2>Projects</h2>
+      <h2>Projects &amp; Websites</h2>
+      <div id="project-filters" class="filters"></div>
       <div id="project-list" class="grid"></div>
+    </section>
+
+    <section id="youtube" class="wrap section">
+      <h2>Pujiverse Network on YouTube</h2>
+      <p class="lead" id="youtube-lead"></p>
+      <div id="channel-filters" class="filters"></div>
+      <div id="channel-list" class="grid channels"></div>
     </section>
 
     <section id="skills" class="wrap section">
@@ -67,14 +81,9 @@
       <div id="education-list" class="edu"></div>
     </section>
 
-    <section id="pujiverse" class="wrap section">
-      <div class="banner">
-        <div>
-          <h2>Pujiverse Network</h2>
-          <p id="pujiverse-text"></p>
-        </div>
-        <a id="pujiverse-link" class="btn" target="_blank" rel="noopener">Visit Pujiverse</a>
-      </div>
+    <section id="social" class="wrap section">
+      <h2>Find Pujiverse Everywhere</h2>
+      <div id="social-list" class="social"></div>
     </section>
 
     <section id="contact" class="wrap section">
@@ -84,11 +93,12 @@
   </main>
 
   <footer class="wrap footer">
-    <p>© <span id="year"></span> <span id="footer-name"></span></p>
+    <p>© <span id="year"></span> <span id="footer-name"></span> · <a href="https://www.pujiverse.com/">pujiverse.com</a></p>
   </footer>
 
-  <!-- data.js holds all your content. script.js puts it on the page. -->
+  <!-- data.js + channels.js hold all your content. script.js puts it on the page. -->
   <script src="data.js"></script>
+  <script src="channels.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@ a { color: inherit; }
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
 .logo { font-weight: 800; text-decoration: none; font-size: 1.1rem; }
-.links { display: flex; gap: 22px; }
+.links { display: flex; gap: 20px; }
 .links a { text-decoration: none; color: var(--muted); font-size: 0.92rem; font-weight: 600; }
 .links a:hover { color: var(--text); }
 
@@ -128,6 +128,67 @@ h3 { font-size: 1.05rem; font-weight: 700; }
 }
 .contact-item:hover { border-color: var(--accent); }
 .contact-item .label { color: var(--muted); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ===== Stats ===== */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 8px; }
+.stat { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px; text-align: center; }
+.stat strong {
+  display: block; font-size: 1.8rem; font-weight: 800;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.stat span { color: var(--muted); font-size: 0.85rem; font-weight: 600; }
+
+/* ===== Filter buttons ===== */
+.lead { color: var(--muted); margin: -6px 0 16px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.chip {
+  font: inherit; font-size: 0.85rem; font-weight: 700; cursor: pointer;
+  padding: 7px 14px; border-radius: 999px;
+  background: var(--panel); color: var(--muted); border: 1px solid var(--line);
+}
+.chip:hover { color: var(--text); }
+.chip.on { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #fff; border-color: transparent; }
+
+/* ===== Card extras ===== */
+.card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.cat { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.status, .count { font-size: 0.72rem; font-weight: 700; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+.count { background: rgba(124, 140, 255, 0.12); color: #c5cbff; }
+.s-live { background: rgba(52, 211, 153, 0.15); color: #6ee7b7; }
+.s-in-progress { background: rgba(251, 191, 36, 0.15); color: #fcd34d; }
+.s-concept, .s-code-only { background: rgba(154, 166, 194, 0.15); color: var(--muted); }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { color: var(--accent); }
+
+/* ===== Experience extras ===== */
+.company a { text-decoration: none; }
+.company a:hover { text-decoration: underline; }
+.company .meta { color: var(--muted); font-weight: 500; }
+.job-text { color: var(--muted); }
+.edu-item .note { font-size: 0.85rem; margin-top: 4px; }
+
+/* ===== YouTube channels ===== */
+.channel .handle { color: var(--accent); font-weight: 600; font-size: 0.88rem; text-decoration: none; margin-top: -6px; }
+.channels { align-items: start; }
+.channel details { border-top: 1px solid var(--line); padding-top: 10px; }
+.channel summary { cursor: pointer; font-weight: 700; font-size: 0.9rem; color: var(--accent); }
+.channel ol { margin-top: 10px; padding-left: 22px; color: var(--muted); font-size: 0.88rem; max-height: 320px; overflow-y: auto; }
+.channel li { margin-bottom: 5px; }
+.channel p { flex-grow: 0; }
+
+/* ===== Social ===== */
+.social { display: grid; gap: 20px; }
+.social-group h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 10px; }
+.social-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.social-links a, .social-links div {
+  display: flex; flex-direction: column; text-decoration: none; overflow-wrap: anywhere;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px;
+}
+.social-links a:hover { border-color: var(--accent); }
+.social-links b { font-size: 0.92rem; }
+.social-links span { color: var(--muted); font-size: 0.82rem; }
+.footer a { color: var(--accent); text-decoration: none; }
 
 .footer { padding: 48px 20px 32px; color: var(--muted); font-size: 0.88rem; text-align: center; }
 

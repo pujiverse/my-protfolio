@@ -158,8 +158,8 @@ const PORTFOLIO = {
       name: "Pujiverse Film Database",
       text: "IMDb-style database of movies, short films, anime and TV across world film industries",
       tags: ["HTML/JS"],
-      status: "In progress",
-      link: "",
+      status: "Live",
+      link: "https://cinema.pujiverse.com/",   // also at https://movies.pujiverse.com/
       code: "https://github.com/pujiverse/Pujiverse-Film-Database"
     },
     {
